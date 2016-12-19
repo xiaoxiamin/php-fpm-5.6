@@ -27,7 +27,7 @@ RUN \
     && docker-php-ext-install gd 
 RUN \
   # 编译、安装 phalcon
-     git clone --depth=1 git://github.com/phalcon/cphalcon.git \
+     git clone -b 2.0.x git://github.com/phalcon/cphalcon.git \
     && cd cphalcon/build \
     && ./install \
     && cd ../.. \
